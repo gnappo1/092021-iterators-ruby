@@ -47,6 +47,7 @@ hash = {
 
 # each - always returns the original array and is usually used to print something out 
 array.each {|el| puts el}
+
 # each_with_index - gives access to the lements position
 array.each_with_index {|el, index| puts "#{index+1}. #{el}"}
 
@@ -70,6 +71,7 @@ array.each_with_index.reduce(0) { |memo, (el, index)| index == 0 || index == 1 ?
 array.all? {|el| !!el}
 
 #min, max - can take a block to specify how to evaluate min and max
+array.flatten.max
 
 
 # TODOS
